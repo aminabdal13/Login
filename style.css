@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont{
+    position: relative;
+    width: 400px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 50px;
+    box-shadow: -5px -5px 20px rgb(44, 44, 44),
+    5px 5px 20px rgb(44, 44, 44);
+    border-radius: 20px;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 0px 0px 7px 0px ;
+}
+.form-input{
+    margin: 35px 0px ;
+    width: 100%;
+    position: relative;
+}
+.form-input input{
+    width: 100%;
+    /* position: relative; */
+    position: absolute;
+    outline: none;
+    background: transparent;
+    border:none;
+    border-radius:6px;
+    box-shadow: inset -3px -3px 5px rgb(243, 167, 81),
+    inset 3px 3px 5px #ff9f9f;
+    padding: 12px 20px;
+    transition:.3s linear,border;
+    font-size: 15px;
+    color: white;
+}
+.form-input label{
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-size: 16px;
+    font-weight:500;
+    letter-spacing: 1px;
+    transition: all .3s linear;
+    cursor: text;
+    color: white;
+}
+.form-input .inputs:focus ~ label,
+.form-input .inputs:valid ~ label{
+    top:-5px;
+    background-color: rgb(0, 0, 0);
+    /* padding: 0px 6px; */
+    font-size: 12px;
+    text-indent: 7px;
+}
+
+#Login{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow:  2px 2px 5px rgb(255, 136, 0),
+     -2px -2px 5px #7e7e7e;
+     font-size: 16px;
+     transition: all .3s linear;
+     padding: 10px 0px;
+
+     margin: 15px 0px;
+    
+}
+#Login:hover{
+    box-shadow: 3px 3px 20px 10px rgb(255, 123, 0);
+    font-size: 22px;
+    background-color: rgb(22, 22, 22);
+}
